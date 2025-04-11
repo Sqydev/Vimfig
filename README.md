@@ -1,6 +1,7 @@
 # Nvimconf
 My nvim config
 
+Why is this blob? couse I'm still making it
 
 Thingis to install too:
 
