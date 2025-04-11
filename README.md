@@ -5,7 +5,7 @@ Why is this blob? couse I'm still making it
 
 Thingis to install too:
 
-lazy, treesitter, telescope
+lazy, treesitter, telescope, fugitive, harpoon, lsp-zero, mason, undotree
 
 Commands to use this thingies:
 
@@ -20,4 +20,4 @@ require "socket"
 
 thingies used: 
 
-https://github.com/alvarojsino813/nvim-config-guide, https://github.com/ellisonleao/gruvbox.nvim, https://github.com/folke/lazy.nvim, https://github.com/nvim-telescope/telescope.nvim, https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file
+https://github.com/alvarojsino813/nvim-config-guide, https://github.com/ellisonleao/gruvbox.nvim, https://github.com/folke/lazy.nvim, https://github.com/nvim-telescope/telescope.nvim, https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file, add more later
