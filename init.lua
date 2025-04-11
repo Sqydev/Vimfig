@@ -1,6 +1,8 @@
 require("keymaps")
-require("launch")
+require("lazy.launch")
 
-spec("colorscheme")
+spec("plugins.colorscheme")
+spec("plugins.treesitter")
+spec("plugins.telescope")
 
 require("lazy.lazy")

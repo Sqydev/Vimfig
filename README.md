@@ -4,7 +4,7 @@ My nvim config
 
 Thingis to install too:
 
-lazy,
+lazy, treesitter, telescope
 
 Commands to use this thingies:
 
@@ -19,4 +19,4 @@ require "socket"
 
 thingies used: 
 
-https://github.com/alvarojsino813/nvim-config-guide, https://github.com/ellisonleao/gruvbox.nvim, https://github.com/folke/lazy.nvim
+https://github.com/alvarojsino813/nvim-config-guide, https://github.com/ellisonleao/gruvbox.nvim, https://github.com/folke/lazy.nvim, https://github.com/nvim-telescope/telescope.nvim, https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file
