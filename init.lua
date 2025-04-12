@@ -10,7 +10,7 @@ spec("plugins.harpoon")
 spec("plugins.undotree")
 spec("plugins.lsp")
 spec("plugins.mason")
-
+spec("plugins.nvim-tree")
 
 require("lazy.lazy")
 
