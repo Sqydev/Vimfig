@@ -9,7 +9,7 @@ local M = {
 M.servers = {
 	"lua_ls",
 	"rust_analyzer",
-	"clangd"
+	"clangd",
 }
 
 function M.config()
