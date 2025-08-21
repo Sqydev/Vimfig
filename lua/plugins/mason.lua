@@ -1,5 +1,3 @@
--- Failuje instalacje clangd. Jak znowu przestanie ci complex.h działać to tym razem zrób żeby w ogóle nie próbowało instalować clangd
-
 local M = {
     'williamboman/mason.nvim',
     dependencies = {
@@ -36,9 +34,7 @@ function M.config()
 
     require("mason-lspconfig").setup {
         ensure_installed = M.servers,
-          automatic_installation = true,
-        exclude = { "clangd" },
-
+        automatic_installation = false,
     }
 
     require "lsp-zero".setup()
