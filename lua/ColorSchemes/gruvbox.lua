@@ -1,7 +1,6 @@
-local ColorScheme = { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true}
+local GruvboxScheme = { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true}
 
-function ColorScheme.config()
-	-- Default options:
+function GruvboxScheme.config()
 	require("gruvbox").setup({
 	  terminal_colors = true, -- add neovim terminal colors
 	  undercurl = true,
@@ -29,5 +28,4 @@ function ColorScheme.config()
 	vim.cmd("colorscheme gruvbox")
 end
 
-return ColorScheme
-
+return GruvboxScheme
