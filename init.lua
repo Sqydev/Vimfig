@@ -27,7 +27,8 @@
 	-- Load Undotree
 		spec("Plugins.undotree")
 
-
+	-- Load Mason
+		spec("Plugins.mason")
 
 -- "Launch" lazy
 	require("Lazy.lazy")
