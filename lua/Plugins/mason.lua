@@ -48,8 +48,8 @@ local Mason = {
 			})
 
         vim.diagnostic.config({
-            virtual_text = true,
-            signs = {
+            virtual_text = false,
+			signs = {
 				-- From what level of diagnostic it should show sign
 				severity = {
 					-- Lowest level possible
@@ -57,11 +57,11 @@ local Mason = {
         		},
 
 				-- Chainge sign's icons
-        		icons = {
-					error = '✖',
-            		warn = '▲',
-        	    	hint = 'H',
-            		info = 'I'
+        		text = {
+            		[vim.diagnostic.severity.ERROR] = '●',
+            		[vim.diagnostic.severity.WARN] = '●',
+            		[vim.diagnostic.severity.HINT] = '●',
+            		[vim.diagnostic.severity.INFO] = '●',
         		},
 			},
             underline = true,
