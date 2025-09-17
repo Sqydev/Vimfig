@@ -1,9 +1,19 @@
 local Mason = {
     "williamboman/mason.nvim",
     dependencies = {
-        "williamboman/mason-lspconfig.nvim",
+        -- Lsp
+		"williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
         "VonHeikemen/lsp-zero.nvim",
+
+		-- Complition
+		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/nvim-cmp",
+		"hrsh7th/cmp-buffer",
+		"hrsh7th/cmp-path",
+		"saadparwaiz1/cmp_luasnip",
+		"hrsh7th/cmp-nvim-lua",
+		"L3MON4D3/LuaSnip"
     },
     config = function()
         local lsp_zero = require("lsp-zero")
@@ -14,7 +24,7 @@ local Mason = {
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
-            automatic_installation = false, -- instalujesz ręcznie w TUI
+            automatic_installation = false,
             handlers = {
                 function(server_name)
                     require("lspconfig")[server_name].setup({})
