@@ -1,5 +1,7 @@
--- Schema
+-- NOTE: Schemay
 -- vim.keymap.set("mode first letter", "input to activate", whattodo)
+-- NOTE:
+-- Complision's keymap is in mason.lua
 
 -- Harpoon keymap
 local mark = require "harpoon.mark"
@@ -20,3 +22,6 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 vim.keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>")
 vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
+
+-- Debugger's
+

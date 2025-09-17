@@ -22,8 +22,8 @@
 	-- Load Mason
 		spec("Plugins.mason")
 
+	-- NOTE: To make TreeSitter work in more langs add langs to ensure_installed in ./lua/Plugins/treesitter.lua
 	-- Load TreeSitter
-	-- To make TreeSitter work in more langs add langs to ensure_installed in ./lua/Plugins/treesitter.lua
 		spec("Plugins.treesitter")
 
 	-- Load nTree
@@ -41,6 +41,9 @@
 	-- Load TodoComms
 		spec("Plugins.todocomms")
 
+	-- Load Debugger(Dap)
+		spec("Plugins.dap")
+
 
 -- "Launch" lazy
 	require("Lazy.lazy")
@@ -52,5 +55,6 @@
 
 ----------------------------------------------------------------------
 
--- Run Scheme(If you want different scheme to run when launching chainge gruvbox to any other colorscheme)
+-- NOTE: Run Scheme(If you want different scheme to run when launching chainge gruvbox to any other colorscheme)
+-- Set colorscheme
 	vim.cmd("colorscheme gruvbox")
