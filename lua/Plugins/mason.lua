@@ -27,10 +27,24 @@ local Mason = {
             automatic_installation = false,
             handlers = {
                 function(server_name)
-                    require("lspconfig")[server_name].setup({})
+                    require("lspconfig")[server_name].setup({  })
                 end,
             },
         })
+
+		local cmp = require("cmp")
+			cmp.setup({
+				mapping = cmp.mapping.preset.insert({
+                	["<C-CR>"] = cmp.mapping.confirm({ select = true }),
+                	["<C-Tab>"] = cmp.mapping.select_next_item(),
+            	}),
+
+    			sources = {
+        			{ name = "nvim_lsp" },
+        			{ name = "buffer" },
+        			{ name = "path" },
+    			},
+			})
 
         vim.diagnostic.config({
             virtual_text = true,
