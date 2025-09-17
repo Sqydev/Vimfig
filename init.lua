@@ -21,6 +21,8 @@
 
 	-- Load Mason
 		spec("Plugins.mason")
+	-- Load TinyDiagnostics
+		spec("Plugins.tinydiagnostics")
 
 	-- NOTE: To make TreeSitter work in more langs add langs to ensure_installed in ./lua/Plugins/treesitter.lua
 	-- Load TreeSitter
