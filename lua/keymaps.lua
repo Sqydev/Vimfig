@@ -13,7 +13,7 @@ end)
 
 -- TeleScope
 local telescope_func = require "telescope.builtin"
-vim.keymap.set("n", "<leader>pf", telescope_func.find_files, {})
+vim.keymap.set("n", "<leader>f", telescope_func.find_files, {})
 
 -- UndoTree && nTree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
