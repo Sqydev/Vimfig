@@ -32,10 +32,11 @@ local Mason = {
             },
         })
 
+		-- Complition
 		local cmp = require("cmp")
 			cmp.setup({
 				mapping = cmp.mapping.preset.insert({
-                	["<C-CR>"] = cmp.mapping.confirm({ select = true }),
+                	["<CR>"] = cmp.mapping.confirm({ select = true }),
                 	["<C-Tab>"] = cmp.mapping.select_next_item(),
             	}),
 
@@ -48,9 +49,23 @@ local Mason = {
 
         vim.diagnostic.config({
             virtual_text = true,
-            signs = true,
+            signs = {
+				-- From what level of diagnostic it should show sign
+				severity = {
+					-- Lowest level possible
+            		min = vim.diagnostic.severity.HINT,
+        		},
+
+				-- Chainge sign's icons
+        		icons = {
+					error = '✖',
+            		warn = '▲',
+        	    	hint = 'H',
+            		info = 'I'
+        		},
+			},
             underline = true,
-            update_in_insert = false,
+            update_in_insert = true,
             severity_sort = true,
         })
     end,
