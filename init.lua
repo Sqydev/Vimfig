@@ -42,6 +42,9 @@
 	-- Load TodoComms
 		spec("Plugins.todocomms")
 
+	-- Load Fugitive
+		spec("Plugins.fugitive")
+
 	-- Load Debugger(Dap)
 		spec("Plugins.dap")
 

@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>[ Sqyd'ovim ]</h1>
+    <h1>[ Sqyd's neovim ]</h1>
     <h3></h3>
 </div>
 
@@ -12,14 +12,19 @@
 </div>
 
 <div align="center">
-    <h2> Instalation </h2>
+    <h2> Instalation && Updating </h2>
     <h3></h3>
 </div>
 
-To install write this to your terminal:
+To install paste this to your terminal:
 ```sh 
-YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scriptsInstalation.sh")"
+YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scripts/Instalation.sh")
 ```
+Or, if you want to just update it:
+```sh
+YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scripts/Update.sh")
+```
+
 
 <div align="center">
     <h2> Showof </h2>
