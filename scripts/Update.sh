@@ -1,2 +1,2 @@
 cd ~/.config/nvim/
-git pull
+git pull origin ReWrite
