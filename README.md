@@ -1,29 +1,27 @@
-# Nvimconf
-My nvim config
+<div align="center">
+    <h1>[ Sqyd'ovim ]</h1>
+    <h3></h3>
+</div>
 
-Why is this blob? couse I'm still making it
+<div align="center">
 
-Thingis to install too:
+![Last Commit](https://img.shields.io/github/last-commit/Sqydev/Rices)
+![Repo size](https://img.shields.io/github/repo-size/Sqydev/Rices)
+![Stars](https://img.shields.io/github/stars/Sqydev/Rices)
 
-lazy, treesitter, telescope, fugitive, harpoon, lsp-zero, mason, undotree, nvim-tree
+</div>
 
-Commands to use this thingies:
+<div align="center">
+    <h2> Instalation </h2>
+    <h3></h3>
+</div>
 
-wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
-tar zxpf luarocks-3.11.1.tar.gz
-cd luarocks-3.11.1
-./configure && make && sudo make install
-sudo luarocks install luasocket
-lua
-Lua 5.3.5 Copyright (C) 1994-2018 Lua.org, PUC-Rio
-require "socket"
+To install write this to your terminal:
+```sh 
+YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/HERE PATH TO DO")"
+```
 
-thingies used: 
-
-https://github.com/alvarojsino813/nvim-config-guide,
-https://github.com/ellisonleao/gruvbox.nvim,
-https://github.com/folke/lazy.nvim, 
-https://github.com/nvim-telescope/telescope.nvim, 
-https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file, 
-https://github.com/nvim-tree/nvim-tree.lua?tab=readme-ov-file
-add more later
+<div align="center">
+    <h2> Showof </h2>
+    <h3></h3>
+</div>
