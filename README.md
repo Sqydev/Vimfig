@@ -18,7 +18,7 @@
 
 To install write this to your terminal:
 ```sh 
-YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/HERE PATH TO DO")"
+YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scriptsInstalation.sh")"
 ```
 
 <div align="center">
