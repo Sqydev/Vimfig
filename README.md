@@ -20,7 +20,7 @@ To install paste this to your terminal:
 ```sh 
 YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scripts/Instalation.sh")
 ```
-Or, if you want to just update it:
+Or, if you just want to update it:
 ```sh
 YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/refs/heads/ReWrite/scripts/Update.sh")
 ```
@@ -30,3 +30,5 @@ YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/ref
     <h2> Showof </h2>
     <h3></h3>
 </div>
+
+![Telescope + Tree + FileOpen](/screenshots/TelescopeTreeFile.png)
