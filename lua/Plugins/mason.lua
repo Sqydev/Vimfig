@@ -22,6 +22,14 @@ local Mason = {
             lsp_zero.default_keymaps({buffer = bufnr})
         end)
 
+		-- Experimental on nixos
+		local lspconfig = require('lspconfig')
+    		lspconfig.clangd.setup({
+        	cmd = { "clangd", "--query-driver=/run/current-system/sw/bin/gcc" },
+        	on_attach = lsp_zero.on_attach,
+        	capabilities = lsp_zero.capabilities,
+    	})
+
         require("mason").setup({})
         require("mason-lspconfig").setup({
             automatic_installation = false,
