@@ -3,7 +3,7 @@ local Mason = {
     dependencies = {
         -- Lsp
 		"williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig",
+		"neovim/nvim-lspconfig",
         "VonHeikemen/lsp-zero.nvim",
 
 		-- Complition
@@ -15,6 +15,7 @@ local Mason = {
 		"hrsh7th/cmp-nvim-lua",
 		"L3MON4D3/LuaSnip"
     },
+
     config = function()
         local lsp_zero = require("lsp-zero")
 
@@ -29,8 +30,8 @@ local Mason = {
 --        	on_attach = lsp_zero.on_attach,
 --        	capabilities = lsp_zero.capabilities,
 --    	})
-
-		require("Plugins.nixos-lsp-support")
+		
+		--require("Plugins.nixos-lsp-supp")
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
