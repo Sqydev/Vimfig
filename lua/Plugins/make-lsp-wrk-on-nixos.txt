@@ -1,0 +1,24 @@
+Add this to wiki later.
+
+Short version:
+For c it looks like this(It's prety much the same on other lang with the only difference being name like include to sumfg):
+
+Lsp looks for all libs is /usr/include/ for libs like math.h
+and in /usr/lib/ for libs like raylib.hd
+
+The problem is that nixos has different paths for them. Like /run/current-system/sw/lib/ for /usr/lib/
+So in conf.nix will link nixos path of modules(here lib) in /usr/name-of-module
+
+how to do this in below(add this to conf.nix). for now just ask chatgbt bout this:
+
+environment.etc."usr/include".source =
+    pkgs.runCommand "fake-usr-include" {} ''
+      mkdir -p $out
+      ln -s ${pkgs.glibc.dev}/include/* $out/
+    '';
+
+system.activationScripts.linkUsrInclude.text = ''
+  mkdir -p /usr
+    ln -sfn /etc/usr/include /usr/include
+    ln -sfn /run/current-system/sw/lib /usr/lib
+  '';
