@@ -10,30 +10,9 @@ local Dap = {
 	config = function()
 		local dap = require("dap")
 
-		-- C adapter conf
-		dap.adapters.codelldb = {
-      		type = "server",
-      		port = "${port}",
-      		executable = {
-        		-- podaj ścieżkę do binarki "codelldb"
-        		command = "codelldb",
-        		args = { "--port", "${port}" },
-      		},
-    	}
-
+		-- ASK GOOGLE HOW TO SET THIS UP
     	-- C conf
     	dap.configurations.c = {
-      	{
-        	name = "Launch file",
-        	type = "codelldb",
-        	request = "launch",
-        	program = function()
-          		return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-        	end,
-        	cwd = "${workspaceFolder}",
-    	    stopOnEntry = false,
-	        terminal = "integrated",
-      		},
     	}
 
     	-- Use C conf for cpp
