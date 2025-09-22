@@ -59,6 +59,5 @@
 
 ----------------------------------------------------------------------
 
--- NOTE: Run Scheme(If you want different scheme to run when launching chainge gruvbox to any other colorscheme)
--- Set colorscheme
-	vim.cmd("colorscheme gruvbox")
+-- NOTE: Set scheme in settings.lua
+	vim.cmd.colorscheme(vim.g.Theme)
