@@ -10,19 +10,34 @@ local Dap = {
 	config = function()
 		local dap = require("dap")
 
-		-- Python config
---		dap.configuration.python = {
---			type = 'python';
---			request = 'launch';
---			name = 'Debug Python',
---			program = "${file}",
---			pythonPatch = function()
---				-- NOTE: Do so it takes the path from your system(So it works on nixos too)
---				return '/usr/bin/python'
---			end;
---		}
+		-- C adapter conf
+		dap.adapters.codelldb = {
+      		type = "server",
+      		port = "${port}",
+      		executable = {
+        		-- podaj ścieżkę do binarki "codelldb"
+        		command = "codelldb",
+        		args = { "--port", "${port}" },
+      		},
+    	}
 
-		-- Here config(empty for now)
+    	-- C conf
+    	dap.configurations.c = {
+      	{
+        	name = "Launch file",
+        	type = "codelldb",
+        	request = "launch",
+        	program = function()
+          		return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+        	end,
+        	cwd = "${workspaceFolder}",
+    	    stopOnEntry = false,
+	        terminal = "integrated",
+      		},
+    	}
+
+    	-- Use C conf for cpp
+    	dap.configurations.cpp = dap.configurations.c
 
 
 		-- UI
