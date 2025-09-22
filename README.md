@@ -33,3 +33,10 @@ YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/ref
 
 ![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFile.png)
 ![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFileAshen.png)
+
+
+ADDDDD LIST
+OPTIONAL PROGRAMS TO INSTALL:
+DEBUGGERS:
+    lldb 
+    codelldb
