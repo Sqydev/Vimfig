@@ -32,3 +32,4 @@ YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Nvimconf/ref
 </div>
 
 ![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFile.png)
+![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFileAshen.png)
