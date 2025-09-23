@@ -10,13 +10,38 @@ local Dap = {
 	config = function()
 		local dap = require("dap")
 
-		-- ASK GOOGLE HOW TO SET THIS UP
-    	-- C conf
-    	dap.configurations.c = {
-    	}
+		-- auto wykrywanie codelldb
+		local codelldb_path
+		if vim.fn.has("unix") == 1 and vim.fn.isdirectory("/run/current-system/sw/share/vscode/extensions/vadimcn.vscode-lldb/adapter") == 1 then
+			-- NixOS
+			codelldb_path = "/run/current-system/sw/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb"
+		else
+			-- Inny system – wpisz swoją ścieżkę
+			codelldb_path = "/usr/bin/codelldb"  -- <- zmień jeśli u Ciebie gdzie indziej
+		end
 
-    	-- Use C conf for cpp
-    	dap.configurations.cpp = dap.configurations.c
+		dap.adapters.codelldb = {
+			type = "server",
+			port = "${port}",
+			executable = {
+				command = codelldb_path,
+				args = { "--port", "${port}" },
+			},
+		}
+
+		dap.configurations.c = { {
+				name = "Launch file",
+				type = "codelldb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+				end,
+				cwd = "${workspaceFolder}",
+				stopOnEntry = false,
+			},
+		}
+
+		dap.configurations.cpp = dap.configurations.c
 
 
 		-- UI
