@@ -48,6 +48,9 @@
 	-- Load Debugger(Dap)
 		spec("Plugins.dap")
 
+	-- Load Neogit
+		spec("Plugins.neogit")
+
 
 -- "Launch" lazy
 	require("Lazy.lazy")
