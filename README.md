@@ -13,6 +13,7 @@
 
 <div align="center">
     <h2> Instalation && Updating </h2>
+    <h3>Add split things... https://github.com/mrjones2014/smart-splits.nvim<h3>
     <h3></h3>
 </div>
 
@@ -33,8 +34,3 @@ YOUR_SHELL -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Vimfig/refs/
 
 ![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFile.png)
 ![Telescope + Tree + FileOpen](/screenshoots/TelescopeTreeFileAshen.png)
-
-
-ADDDDD LIST
-OPTIONAL PROGRAMS TO INSTALL:
-DEBUGGERS:
