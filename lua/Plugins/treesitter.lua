@@ -3,7 +3,7 @@ local TreeSitter = {
   build = ":TSUpdate",
   lazy = false,
   config = function()
-    require("nvim-treesitter.configs").setup({
+    require("nvim-treesitter.config").setup({
       ensure_installed = {
         "c", "c_sharp", "rust", "java",
         "python", "javascript", "lua", "bash"
