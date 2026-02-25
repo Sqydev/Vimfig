@@ -27,6 +27,9 @@
 	-- Load TreeSitter
 		spec("Plugins.treesitter")
 
+	-- Load Snackey
+		spec("Plugins.snacks")
+
 	-- Load nTree
 		spec("Plugins.ntree")
 
