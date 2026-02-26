@@ -8,7 +8,7 @@ local TreeSitter = {
     })
 
     require('nvim-treesitter').install({ 
-      'c', 'rust', 'lua', 'python', 'javascript', 'bash', 'c_sharp', 'java' 
+      'c', 'cpp', 'rust', 'lua', 'python', 'javascript', 'bash', 'c_sharp', 'java' 
     })
 
     vim.api.nvim_create_autocmd('FileType', {
