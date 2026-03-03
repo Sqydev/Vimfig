@@ -23,12 +23,6 @@ local Mason = {
             lsp_zero.default_keymaps({buffer = bufnr})
         end)
 
-		vim.filetype.add({
-            extension = {
-                h = "c",
-            }
-        })
-
         require("mason").setup({})
         require("mason-lspconfig").setup({
             automatic_installation = false,
