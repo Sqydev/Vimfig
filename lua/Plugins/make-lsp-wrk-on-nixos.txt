@@ -1,3 +1,5 @@
+NOW IT WORKS. THAY ADDED NIXOS SUPPORT I THINK
+
 To make lsp work on nixos you need to install lsp in your config.nix, in this case clangd for c/c++:
 	environment.systemPackages = with pkgs; [ clang-tools ]
 

@@ -26,11 +26,15 @@ local Mason = {
         require("mason").setup({})
         require("mason-lspconfig").setup({
             automatic_installation = false,
-            handlers = {
-                function(server_name)
-					require("lspconfig")[server_name].setup({ })
-                end,
-            },
+			handlers = {
+			    function(server_name)
+			        require("lspconfig")[server_name].setup({ })
+			    end,
+			    clangd = function()
+			        require("lspconfig").clangd.setup({
+			        })
+			    end,
+			},
         })
 
 		-- Complition
