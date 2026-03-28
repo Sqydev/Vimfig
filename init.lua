@@ -21,6 +21,10 @@
 
 	-- Load Mason
 		spec("Plugins.mason")
+
+	-- Load MarkdownPreview
+		spec("Plugins.markdown-preview")
+
 	-- Load TinyDiagnostics
 		spec("Plugins.tinydiagnostics")
 
