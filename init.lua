@@ -58,6 +58,9 @@
 	-- Load Neogit
 		spec("Plugins.neogit")
 
+	-- Load Comment
+		spec("Plugins.comment")
+
 
 -- "Launch" lazy
 	require("Lazy.lazy")
