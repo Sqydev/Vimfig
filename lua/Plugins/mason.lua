@@ -16,6 +16,12 @@ local Mason = {
 		"L3MON4D3/LuaSnip"
     },
 
+	vim.filetype.add({
+    	extension = {
+        	cl = "opencl",
+    	},
+	}),
+
     config = function()
         local lsp_zero = require("lsp-zero")
 
