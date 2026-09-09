@@ -23,5 +23,8 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 vim.keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>")
 vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
 
+-- Codemap
+vim.keymap.set("n", "<leader>ct", ":CodemapToggle<CR>")
+
 -- Debugger's
 

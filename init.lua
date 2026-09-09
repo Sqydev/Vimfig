@@ -49,6 +49,9 @@
 	-- Load TodoComms
 		spec("Plugins.todocomms")
 
+	-- Load Codemap
+		spec("Plugins.codemap")
+
 	-- Load Fugitive
 		spec("Plugins.fugitive")
 
