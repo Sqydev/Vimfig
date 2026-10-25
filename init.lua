@@ -12,6 +12,10 @@
 	-- Load ColorSchemes
 		-- Gruvbox
 			spec("ColorSchemes.gruvbox")
+		-- Gruvbox Material
+			spec("ColorSchemes.gruvboxMaterial")
+		-- Gruvstone
+			spec("ColorSchemes.gruvstone")
 		-- Melange
 			spec("ColorSchemes.melange")
 		-- Ashen(Dark one)
